@@ -3,7 +3,7 @@ guard :bundler do
 end
 
 guard :rspec do
-  watch(%r{^lib/(.+)\.rb$})     { "spec" }
+  watch(%r{^(.+)\.rb$})     { "spec" }
   watch(%r{^spec/(.+)\.rb$})     { "spec" }
 end
 
